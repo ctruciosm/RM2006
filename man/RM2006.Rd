@@ -4,7 +4,7 @@
 RiskMetrics 2006 Methodology
 }
 \description{
-Estimating the conditional covariance matrix with the RiskMetrics 2006 methodology of Zumbach (2007).
+Estimation of the conditional covariance matrix using the RiskMetrics 2006 methodology of Zumbach (2007).
 }
 \usage{
 RM2006(data, tau0, tau1, kmax,rho)
