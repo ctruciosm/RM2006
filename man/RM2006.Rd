@@ -4,7 +4,7 @@
 RiskMetrics 2006 Methodology
 }
 \description{
-Estimation the conditional covariance matrix using the RiskMetrics 2006 methodology of Zumbach (2007).
+Estimating the conditional covariance matrix with the RiskMetrics 2006 methodology of Zumbach (2007).
 }
 \usage{
 RM2006(data, tau0, tau1, kmax,rho)
@@ -30,7 +30,7 @@ optional input parameter. Default 1.4142
 More details can be found in Zumbach (2007) and in the MFE Toolbox of Kevin Sheppard (function riskmetrics2006).
 }
 \value{
-The funcion returns an array containing for each t (t = 1, ..., T) a KxK matrix with the conditional covariance matrix estimates.
+The funcion returns an array containing for each t (t = 1, ..., T+1) a KxK matrix with the conditional covariance matrix estimates.
 }
 \references{
 Zumbach, G. (2007) The Riskmetrics 2006 Methodology. Available at SSRN: https://ssrn.com/abstract=1420185 or http://dx.doi.org/10.2139/ssrn.1420185

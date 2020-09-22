@@ -2,8 +2,8 @@ Package: RM2006
 Type: Package
 Title: RiskMetrics 2006 Methodology
 Version: 0.1.0
-Date: 2018-03-12
+Date: 2020-09-22
 Author: Carlos Trucios
 Maintainer: Carlos Trucios <ctrucios@gmail.com>
-Description: Estimation the conditional covariance matrix using the RiskMetrics 2006 methodology of Zumbach (2007) <doi:10.2139/ssrn.1420185>.
+Description: Estimating the conditional covariance matrix with the RiskMetrics 2006 methodology of Zumbach (2007) <doi:10.2139/ssrn.1420185>.
 License: GPL (>= 2)

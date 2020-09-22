@@ -1,7 +1,9 @@
 RM2006 = function(data, tau0 = 1560, tau1 = 4, kmax = 14, rho = sqrt(2)){
 T = dim(data)[[1]]
 K = dim(data)[[2]]
-Ht = Httilde = temp = array(0,dim = c(K,K,T))
+temp = array(0,dim = c(K,K,T))
+Ht = Httilde = array(0,dim = c(K,K,T+1))
+
 
 for (t in 1:T){
   temp[,,t] = tcrossprod(data[t,])
@@ -23,7 +25,7 @@ for (k in 1:kmax){
   }
   Httilde[,,1] = backCast
   
-  for (t in 2:T){
+  for (t in 2:(T+1)){
     Httilde[,,t] = mu*Httilde[,,t-1] +(1-mu)*data[,,t-1]
   }
   Ht = Ht + w[k]*Httilde
